@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Add product</h1>
+    <div>
+        <input type="number" id="id" placeholder="Id" />
+        <input type="text" id="name" placeholder="Name" />
+        <input type="number" id="price" placeholder="Price" />
+        <button onclick="addProduct()">Add Product</button>
+
+    </div>
+    <H1>Delete Product</H1>
+    <DIV>
+        <input type="number" name="" id="delete">
+        <button onclick="deleteProduct()">Delete Product</button>
+    </DIV>
+
+    <H1>update Product</H1>
+    <DIV>
+        <input type="number" id="update" placeholder="Id" />
+        <input type="text" id="upname" placeholder="Name" />
+        <input type="number" id="upprice" placeholder="Price" />
+        <button onclick="updateProduct()">Update Product</button>
+    </DIV>
+
+</body>
+
+</html>
+<script>
+
+    async function addProduct() {
+        let data = {
+            id: document.getElementById('id').value,
+            name: document.getElementById('name').value,
+            price: document.getElementById('price').value,
+        };
+        let res = await fetch("http://localhost:5000/api/products", {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        let d = await res.json()
+        console.log(d)
+    }
+
+    async function deleteProduct() {
+        let del = document.getElementById('delete')
+        let res = await fetch(`http://localhost:5000/api/products/${del}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+
+    }
+
+    async function updateProduct() {
+        let upd = document.getElementById('update').value
+        let data = {
+            id: document.getElementById('update').value,
+            name: document.getElementById('upname').value,
+            price: document.getElementById('upprice').value,
+        }
+        let res = await fetch(`http://localhost:5000/api/products/${upd}`, {
+            method: 'PUT',
+            body: JSON.stringify(data),
+            headers: {
+                'Content-type': 'application/json'
+            }
+        })
+    }
+
+    async function product() {
+        let res = await fetch('http://localhost:5000/api/products')
+        let data = await res.json()
+        console.log(data)
+    }
+    product()
+</script>
