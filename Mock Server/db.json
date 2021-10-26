@@ -1,0 +1,50 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "pizza",
+      "price": "230"
+    },
+    {
+      "id": 3,
+      "name": "Ice Cream",
+      "price": 2.5,
+      "active": false
+    },
+    {
+      "id": "12",
+      "name": "sdsd",
+      "price": "1212"
+    },
+    {
+      "id": 17,
+      "name": "bt",
+      "price": "50"
+    },
+    {
+      "id": "18",
+      "name": "food",
+      "price": "123"
+    },
+    {
+      "id": 6,
+      "name": "burger",
+      "price": "200"
+    },
+    {
+      "id": 7,
+      "name": "cake",
+      "price": "600"
+    },
+    {
+      "id": 121,
+      "name": "cake",
+      "price": "600"
+    },
+    {
+      "id": "100",
+      "name": "eggg",
+      "price": "1212"
+    }
+  ]
+}
