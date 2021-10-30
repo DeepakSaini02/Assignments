@@ -1,0 +1,71 @@
+body {
+    background-color: #FAFAFA;
+}
+#main{
+    margin: 8rem 18rem;
+}
+#box3{
+    background-color: white;
+}
+#box2{
+    background-color: white;
+}
+
+
+#text {
+    resize: none;
+    height: 13rem;
+    width: 22rem;
+    border: none;
+    font-size: 20px;
+}
+
+#ans {
+    border: none;
+    resize: none;
+    height: 13rem;
+    width: 22rem;
+    background-color: #EEEEEE;
+    font-size: 20px;
+}
+
+#btn {
+    margin: 0px 124px;
+}
+
+#langSpeakOut {
+    margin: 0px -125px;
+}
+
+#div1 {
+    margin: 9rem 21rem;
+}
+
+#div2 {
+    margin: -8rem 19rem;
+    background-color: white;
+}
+
+select {
+    color: blue;
+}
+
+#sound {
+    border: none;
+    background-color: white;
+    margin: 0 19.4rem;
+}
+
+#change {
+    margin: 8px 190px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    color: blue;
+}
+
+#voicebtn {
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+}
