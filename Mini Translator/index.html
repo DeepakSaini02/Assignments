@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="box1">
+            <label for=""> Translate language from </label>
+        <select name="input" id="langSpeak">
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="zh">Chinise</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="hi">Hindi</option>
+            <option value="ga">Irish</option>
+
+        </select>
+        <label id="btn" for="">Translate language to</label>
+        <select name="output" id="langSpeakOut">
+            <option value="hi">Hindi</option>
+            <option value="en">English</option>
+            <option value="ar">Arabic</option>
+            <option value="zh">Chinise</option>
+            <option value="es">Spanish</option>
+            <option value="de">German</option>
+            <option value="ga">Irish</option>
+
+        </select>
+
+        </div>
+        <div id="box2">
+            <textarea name="quary" id="text" cols="30" rows="10"></textarea>
+            <textarea name="ans" id="ans" cols="30" rows="10">Translation</textarea>
+        </div>
+        <div id="box3">
+            <button id="voicebtn" onclick="Speak()">
+                <img src="./images/mic.svg" alt="">
+            </button>
+           
+        <button id="sound" onclick="textToAudio()">
+            <img src="./images/sound.svg" alt="">
+        </button>
+        </div>
+        <div id="box4">
+            <button id="change" onclick="translatee()">Translate</button>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
+<script src="script.js"></script>
