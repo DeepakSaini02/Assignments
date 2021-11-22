@@ -1,0 +1,13 @@
+1. use assignment //for create a database assignment
+2. db.createCollection("users") //for create a user collection
+3. db.users.insert({first_name:'deep',last_name:'sain',email:'16eiacs012@gmail.com',gender:'male',ip_address:'127.0.0.2',age:25})  //for inserting data
+4. db.users.insertMany([{first_name:'santosh',last_name:'rajput',email:'14eiacs012@gmail.com',gender:'male',ip_address:'127.0.0.234',age:24},{first_name:'luv',last_name:'sahu',email:'15eiacs022',gender:'male',ip_address:'127.0.0.212',age:26}])
+5. db.users.find({}).pretty()
+6. db.users.find({})
+7. db.users.findOne({gender:'male'})
+8. db.users.update({ "_id" : ObjectId("619b92a362862ad373b91953")},{$set:{ip_address:'127.0.0.222'}})
+9. db.users.updateMany({ first_name:'luv'},{$set:{last_name:'yadav'}})
+10. db.users.remove({first_name:'deepak'},1)
+11. db.users.deleteOne({last_name:'yadav'})
+12. db.users.deleteMany({last_name:'rajput'})
+13. db.dropDatabase()
