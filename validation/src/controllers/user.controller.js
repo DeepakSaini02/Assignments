@@ -53,5 +53,31 @@ router.get("/",async(req,res)=>{
     }
 })
 
+router.get("/:id",async(req,res)=>{
+    try{
+        const user=await User.findById(req.params.id).lean().exec()
+        res.status(200).send({user})
+    }catch(e){
+        res.status(500).send({message:e.message})
+    }
+})
+
+router.patch("/:id",async(req,res)=>{
+    try{
+        const user=await User.findByIdAndUpdate(req.params.id,req.body,{new:true}).lean().exec()
+        res.status(200).send({user})
+    }catch(e){
+        res.status(500).send({message:e.message})
+    }
+})
+
+router.delete("/:id",async(req,res)=>{
+    try{
+        const user=await User.findByIdAndDelete(req.params.id).lean().exec()
+        res.status(200).send({user})
+    }catch(e){
+        res.status(500).send({message:e.message})
+    }
+})
 
 module.exports=router;
