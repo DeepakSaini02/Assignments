@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">NOTES</div>
+    <form action="" id="noteform">
+        <input type="text" id="heading"  placeholder="Note Heading">
+        <!-- <input type="textarea" id="content"  placeholder="Note Detail"> -->
+        <input id="sumbtn" type="submit">
+        <!-- <button id="saveData">save</button> -->
+    </form>
+        
+        <textarea form ="noteform" id="content" rows="10" cols="35" placeholder="Note Detail" wrap="soft"></textarea>
+    <div id="notes"></div>
+    <div id="details">
+        <button id="closebtn">close</button>
+        <div id="showHeading"></div>
+        <div id="showContent"></div>
+    </div>
+</body>
+</html>
+<script src="/build/bundle.js"></script>
