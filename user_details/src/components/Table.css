@@ -1,0 +1,29 @@
+#imkkk{
+    height: 100px;
+    height: 100px;
+    /* border-radius: 100%; */
+    width: 158px;
+    /* margin-bottom: 1rem; */
+
+}
+#prev{
+    height: 100px;
+    width: 100px;
+}
+
+.table{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+td{
+
+    border: 2px solid;
+}
+.data{
+       /* border: 2px solid black; */
+       text-align: center;
+       display: grid;
+       grid-template-columns: 90%;
+       text-align: center;
+}

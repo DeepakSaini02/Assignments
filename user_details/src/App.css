@@ -1,0 +1,14 @@
+.App{
+    display: flex;
+   
+    gap: 2rem;
+    /* align-content: center; */
+    justify-content: center;
+
+}
+
+
+*{
+    background-color: #072227;
+    color: #4FBDBA;
+}
