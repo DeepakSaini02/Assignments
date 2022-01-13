@@ -1,0 +1,17 @@
+.form{
+    margin: auto;
+    /* border: 2px solid black; */
+    display: grid;
+    justify-content: flex-start;
+    gap: 1rem;
+    /* display: block; */
+    margin-top: 1rem;
+    margin-left: 2rem;
+
+}
+input{
+    border: 1px solid #004D40;
+    border-radius: 5%;
+    outline: none;
+    
+}
