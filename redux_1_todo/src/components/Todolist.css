@@ -1,0 +1,32 @@
+.first{
+    border: 2px solid black;
+    align-items: center;
+    background-color: #192133;
+
+    color: white;
+}
+body{
+    background-color: rgb(244, 232, 211);
+}
+#showdiv{
+    display: none;
+    width: 40vw;
+    height: 25vh;
+    background-color: #192133;
+    margin: 10vh auto;
+    color: white;
+    margin-left: 20rem;
+}
+#closebtn{
+ margin-left: 30rem;
+ margin-top: 0.6rem;
+}
+.headdiv{
+    /* border: 2px solid red; */
+    margin-top: 2rem;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 2rem;
+    justify-content: center;
+}
