@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite</title>
+    <style>
+      #scrollDiv {
+        overflow-y: scroll;
+        width: 400px;
+        margin: 3rem auto;
+        border: 11px solid rgb(100, 52, 52);
+        border-radius: 4%;
+        height: 400px;
+      }
+      #innerDiv {
+        height: 1rem;
+        margin: 5px;
+        padding: 5px;
+        text-align: center;
+        border: 1px solid rgb(255 255 255);
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="scrollDiv"></div>
+  </body>
+</html>
+
+<script>
+  let x = 1;
+  let scrollDiv = document.getElementById("scrollDiv");
+
+  window.onload = () => {
+    additem();
+  };
+
+  function additem() {
+    for (let i = 0; i < 25; i++) {
+      let divId = document.createElement("div");
+      divId.id = "innerDiv";
+      divId.innerText = `Masai Student ${x++}`;
+      scrollDiv.append(divId);
+    }
+  }
+
+  scrollDiv.addEventListener("scroll", (e) => {
+    console.log(
+      "scrolltop",
+      e.target.scrollTop,
+      "    scrollheight",
+      e.target.scrollHeight,
+      "   clientHeight",
+      e.target.clientHeight
+    );
+    if (e.target.scrollTop >= e.target.scrollHeight - e.target.clientHeight) {
+      additem();
+    }
+  });
+</script>
